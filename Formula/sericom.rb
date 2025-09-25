@@ -1,20 +1,20 @@
 class Sericom < Formula
   desc "CLI tool for communicating with devices over a serial connection."
   homepage "https://github.com/tkatter/sericom"
-  version "0.5.2"
+  version "0.5.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/tkatter/sericom/releases/download/sericom/v0.5.2/sericom-aarch64-apple-darwin.tar.xz"
-      sha256 "f0c8994d8c3a1b636a01cbf88a9c86ab1f3def5ec7511cabe01f0c6c89822e9b"
+      url "https://github.com/tkatter/sericom/releases/download/sericom/v0.5.4/sericom-aarch64-apple-darwin.tar.xz"
+      sha256 "7fe8f840a968cb14fe653b98fd8413352496632dcaebe7de2a934f17cdfe13a4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tkatter/sericom/releases/download/sericom/v0.5.2/sericom-x86_64-apple-darwin.tar.xz"
-      sha256 "c46f082e570ed71cb45ea169bb999d43304d6b565b443a5eb00267aa467058c0"
+      url "https://github.com/tkatter/sericom/releases/download/sericom/v0.5.4/sericom-x86_64-apple-darwin.tar.xz"
+      sha256 "761afac5038636444261a4cb3943c498fb1b3e56326065c05e896b9ecae79d77"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/tkatter/sericom/releases/download/sericom/v0.5.2/sericom-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "d6794112ca8c1cd4a4636027c3b42d44748b4f7099744802650e7d6d9edba83e"
+    url "https://github.com/tkatter/sericom/releases/download/sericom/v0.5.4/sericom-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "665eece4ba53d082f3c61ee3cd61943bfb2453ce928e21a9c025ecd0b3289e07"
   end
   license "GPL-3.0-or-later"
 
